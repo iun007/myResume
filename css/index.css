@@ -1,0 +1,169 @@
+body, div, ul, p {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+ul {
+    list-style: none;
+}
+
+#main {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: black;
+}
+
+#list li {
+    width: 100%;
+    height: 100%;
+    background: #4b89dc;
+    position: absolute;
+    text-align: center;
+    left: 0;
+    top: 0;
+}
+
+.zIndex {
+    z-index: 10;
+}
+
+.photo {
+    position: absolute;
+    top: 1rem;
+    left: 50%;
+    width: 2rem;
+    height: 2rem;
+    margin-left: -1rem;
+    background: #ffffff;
+    border-radius: 50%;
+}
+
+.photo img {
+    width: 100%;
+    height: 100%;
+}
+.move{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+.a1 {
+    position: absolute;
+    width: 100%;
+    bottom: 1rem;
+    text-align: center;
+    -webkit-transform: translate(-600px, 0);
+}
+
+#a1 p{
+    -webkit-animation:a1 1s linear 0s 1;
+    animation:a1 1s linear 0s 1;
+    -webkit-animation-fill-mode:both;
+    animation-fill-mode:both;
+}
+
+@-webkit-keyframes a1{
+    0%{
+        -webkit-transform: translate(-600px, 0);
+    }
+    100%{
+        -webkit-transform: translate(0, 0);
+    }
+}
+
+@keyframes a1{
+    0%{
+        -webkit-transform: translate(-600px, 0);
+    }
+    100%{
+        -webkit-transform: translate(0, 0);
+    }
+}
+
+.a1 p {
+    color: #ffffff;
+    font-size: 0.5rem;
+    margin-bottom: 0.2rem;
+    line-height: 0.5rem;
+
+}
+
+
+h3 {
+    width: 4rem;
+    height: 1rem;
+    color: #ffffff;
+    line-height: 1rem;
+    border-radius: 0.1rem;
+    font-size: 0.7rem;
+    margin: 1rem auto 0;
+    background: #132338;
+}
+
+.a2 p {
+    position: absolute;
+    margin: 0 0.2rem;
+    width: 100%;
+    bottom: 1rem;
+    font-size: 0.5rem;
+    color: #ffffff;
+    text-align: center;
+}
+
+
+.a3 {
+
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    margin-left: -230px;
+}
+
+#a3 {
+    -webkit-transform: rotateY(720deg);
+    -webkit-transition: 0.5s;
+}
+
+.a4 p {
+    width: 0;
+    height: 0;
+    color: #ffffff;
+    word-wrap: break-word;
+    overflow: hidden;
+    line-height: 20px;
+    font-size: 14px;
+    box-shadow: 1px 1px 10px rgb(255, 255, 255);
+    position: absolute;
+}
+
+.a4 p:nth-child(1) {
+    left: 10%;
+    top: 15%
+}
+
+.a4 p:nth-child(2) {
+    left: 53%;
+    top: 18%;
+}
+
+.a4 p:nth-child(3) {
+    left: 78%;
+    top: 46%
+}
+
+#a4 p {
+    width: 100px;
+    height: 100px;
+    -webkit-transition: 1s;
+}
+
