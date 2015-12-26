@@ -64,13 +64,13 @@ ul {
     width: 100%;
     bottom: 1rem;
     text-align: center;
-    -webkit-transform: translate(-600px, 0);
+    /*-webkit-transform: translate(-600px, 0);*/
 }
 
 #a1 {
-    -webkit-animation: a1 1s linear 0s 1;
+    /*-webkit-animation: a1 1s linear 0s 1;*/
     animation: a1 1s linear 0s 1;
-    -webkit-animation-fill-mode: both;
+    /*-webkit-animation-fill-mode: both;*/
     animation-fill-mode: both;
 }
 
@@ -85,10 +85,10 @@ ul {
 
 @keyframes a1 {
     0% {
-        -webkit-transform: translate(-600px, 0);
+        transform: translate(-600px, 0);
     }
     100% {
-        -webkit-transform: translate(0, 0);
+        transform: translate(0, 0);
     }
 }
 
@@ -127,8 +127,10 @@ h3 {
 }
 
 #a2 {
-    -webkit-transform: rotateY(360deg);
-    -webkit-transition: 0.5s;
+    /*-webkit-transform: rotateY(360deg);*/
+    transform: rotateY(360deg);
+    /*-webkit-transition: 0.5s;*/
+    transition: 0.5s;
 
 }
 
@@ -149,30 +151,38 @@ h3 {
     border: 2px solid #ffffff;
 }
 .a3 p:nth-child(1){
-    -webkit-animation: a3p 1s linear 0s 1;
+    /*-webkit-animation: a3p 1s linear 0s 1;*/
     animation: a3p 1s linear 0s 1;
-    -webkit-animation-fill-mode: both;
+    /*-webkit-animation-fill-mode: both;*/
     animation-fill-mode: both;
 }
 .a3 p:nth-child(2){
-    -webkit-animation: a3p 1s linear 1s 1;
+    /*-webkit-animation: a3p 1s linear 1s 1;*/
     animation: a3p 1s linear 1s 1;
-    -webkit-animation-fill-mode: both;
+    /*-webkit-animation-fill-mode: both;*/
     animation-fill-mode: both;
 }
 .a3 p:nth-child(3){
-    -webkit-animation: a3p 1s linear 2s 1;
+    /*-webkit-animation: a3p 1s linear 2s 1;*/
     animation: a3p 1s linear 2s 1;
-    -webkit-animation-fill-mode: both;
+    /*-webkit-animation-fill-mode: both;*/
     animation-fill-mode: both;
 }
 .a3 p:nth-child(4){
-    -webkit-animation: a3p 1s linear 3s 1;
+    /*-webkit-animation: a3p 1s linear 3s 1;*/
     animation: a3p 1s linear 3s 1;
-    -webkit-animation-fill-mode: both;
+    /*-webkit-animation-fill-mode: both;*/
     animation-fill-mode: both;
 }
 @keyframes a3p {
+    0% {
+        transform: translate(0,7rem);
+    }
+    100% {
+        transform: translate(0, 0);
+    }
+}
+@-webkit-keyframes a3p{
     0% {
         -webkit-transform: translate(0,7rem);
     }
@@ -211,7 +221,8 @@ h3 {
 #a4 p {
     width: 100px;
     height: 100px;
-    -webkit-transition: 1s;
+    /*-webkit-transition: 1s;*/
+    transition:1s
 }
 .a5{
     position: absolute;
