@@ -48,6 +48,7 @@ function end(e) {
         list[this.nextIndex].addEventListener('webkitTransitionEnd', function () {
             this.style.webkitTransition = '';
             this.firstElementChild.id='a'+(this.index+1);
+            a1.style.transform = "translate(-600px,0)";
         }, false);
 
     }

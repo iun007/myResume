@@ -50,13 +50,15 @@ ul {
     width: 100%;
     height: 100%;
 }
-.move{
+
+.move {
     position: absolute;
     width: 100%;
     height: 100%;
     top: 0;
     left: 0;
 }
+
 .a1 {
     position: absolute;
     width: 100%;
@@ -65,27 +67,27 @@ ul {
     -webkit-transform: translate(-600px, 0);
 }
 
-#a1 p{
-    -webkit-animation:a1 1s linear 0s 1;
-    animation:a1 1s linear 0s 1;
-    -webkit-animation-fill-mode:both;
-    animation-fill-mode:both;
+#a1 {
+    -webkit-animation: a1 1s linear 0s 1;
+    animation: a1 1s linear 0s 1;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
 }
 
-@-webkit-keyframes a1{
-    0%{
+@-webkit-keyframes a1 {
+    0% {
         -webkit-transform: translate(-600px, 0);
     }
-    100%{
+    100% {
         -webkit-transform: translate(0, 0);
     }
 }
 
-@keyframes a1{
-    0%{
+@keyframes a1 {
+    0% {
         -webkit-transform: translate(-600px, 0);
     }
-    100%{
+    100% {
         -webkit-transform: translate(0, 0);
     }
 }
@@ -98,7 +100,6 @@ ul {
 
 }
 
-
 h3 {
     width: 4rem;
     height: 1rem;
@@ -110,28 +111,74 @@ h3 {
     background: #132338;
 }
 
-.a2 p {
+.a2 {
     position: absolute;
-    margin: 0 0.2rem;
     width: 100%;
-    bottom: 1rem;
+    bottom: 3rem;
     font-size: 0.5rem;
     color: #ffffff;
     text-align: center;
 }
 
-
-.a3 {
-
-    position: absolute;
-    bottom: 10%;
-    left: 50%;
-    margin-left: -230px;
+.a2 p {
+    padding: 0.5rem 0;
+    border-radius: 0.3rem;
+    border: 2px solid #ffffff;
 }
 
-#a3 {
-    -webkit-transform: rotateY(720deg);
+#a2 {
+    -webkit-transform: rotateY(360deg);
     -webkit-transition: 0.5s;
+
+}
+
+.a3 {
+    position: absolute;
+    width: 100%;
+    bottom: 2rem;
+    font-size: 0.5rem;
+    color: #ffffff;
+    text-align: center;
+
+}
+
+.a3 p{
+
+    margin: 0.5rem 0;
+    line-height: 1rem;
+    border: 2px solid #ffffff;
+}
+.a3 p:nth-child(1){
+    -webkit-animation: a3p 1s linear 0s 1;
+    animation: a3p 1s linear 0s 1;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+.a3 p:nth-child(2){
+    -webkit-animation: a3p 1s linear 1s 1;
+    animation: a3p 1s linear 1s 1;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+.a3 p:nth-child(3){
+    -webkit-animation: a3p 1s linear 2s 1;
+    animation: a3p 1s linear 2s 1;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+.a3 p:nth-child(4){
+    -webkit-animation: a3p 1s linear 3s 1;
+    animation: a3p 1s linear 3s 1;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+@keyframes a3p {
+    0% {
+        -webkit-transform: translate(0,7rem);
+    }
+    100% {
+        -webkit-transform: translate(0, 0);
+    }
 }
 
 .a4 p {
@@ -166,4 +213,11 @@ h3 {
     height: 100px;
     -webkit-transition: 1s;
 }
-
+.a5{
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    font-size: 0.5rem;
+    color: #ffffff;
+    text-align: center;
+}
