@@ -48,7 +48,6 @@ function end(e) {
         list[this.nextIndex].addEventListener('webkitTransitionEnd', function () {
             this.style.webkitTransition = '';
             this.firstElementChild.id='a'+(this.index+1);
-            a1.style.transform = "translate(-600px,0)";
         }, false);
 
     }
@@ -58,6 +57,27 @@ document.addEventListener("touchmove",function(){});
 var a1=document.querySelector(".a1");
 
 window.setTimeout(function () {
-    a1.style.transform = "translate(0,0)";
-    a1.style.transition = "1s";
+    a1.id="a1";
 });
+window.addEventListener("load", function () {
+    var musicAudio = document.querySelector("#musicAudio");
+    var music = document.querySelector(".music");
+
+    musicAudio.addEventListener("canplay", function () {
+        music.style.display = "block";
+        music.className = "music move";
+    }, false);
+    musicAudio.play();
+
+    $t.tap(music, {
+        end: function (e) {
+            if (musicAudio.paused) {
+                musicAudio.play();
+                this.className = "music move";
+                return;
+            }
+            musicAudio.pause();
+            this.className = "music";
+        }
+    });
+}, false);
