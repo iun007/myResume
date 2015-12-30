@@ -35,15 +35,19 @@ function move(e) {
     }
     var scalePos = 1 - Math.abs(changePos) / winH;
     list[cur].style.webkitTransform = "scale("+(1-Math.abs(changePos)/winH)+") translate(0,"+changePos+"px)";
+    list[cur].style.transform = "scale("+(1-Math.abs(changePos)/winH)+") translate(0,"+changePos+"px)";
     list[this.nextIndex].style.display = 'block';
     list[this.nextIndex].className = "zIndex";
     list[this.nextIndex].style.webkitTransform = 'translate(0,' + distance + 'px)';
+    list[this.nextIndex].style.transform = 'translate(0,' + distance + 'px)';
 }
 
 function end(e) {
     if (this.flag) {
         list[this.nextIndex].style.webkitTransform = 'translate(0,0)';
+         list[this.nextIndex].style.transform = 'translate(0,0)';
         list[this.nextIndex].style.webkitTransitionDuration = '0.5s';
+        list[this.nextIndex].style.transitionDuration = '0.5s';
 
         list[this.nextIndex].addEventListener('webkitTransitionEnd', function () {
             this.style.webkitTransition = '';
