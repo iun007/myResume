@@ -43,7 +43,7 @@ function move(e) {
 function end(e) {
     if (this.flag) {
         list[this.nextIndex].style.webkitTransform = 'translate(0,0)';
-        list[this.nextIndex].style.webkitTransition = '0.5s';
+        list[this.nextIndex].style.webkitTransitionDuration = '0.5s';
 
         list[this.nextIndex].addEventListener('webkitTransitionEnd', function () {
             this.style.webkitTransition = '';
